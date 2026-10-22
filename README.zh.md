@@ -2249,9 +2249,6 @@ dsh plugin --profile web add dshmarket
 - [1Lany2a/dsh-domain-role#dsh-domain-bridge](https://github.com/1Lany2a/dsh-domain-role/tree/main/plugins/dsh-domain-bridge) — 长周期 agent 会话的域身份层——声明优先的域寻址、会话工厂、四级暂停与模型分派，用于协调多个顶层会话。
 - [2026heshao/dsh-forget-session](https://github.com/2026heshao/dsh-forget-session) — 在会话行菜单加入「遗忘会话」（菜单内二次点击确认），把会话从侧栏与磁盘彻底移除：先停掉正在运行的工作，经官方通道解除工作区、归档与置顶记录，删除日志目录与投影缓存条目，并由复活守卫在一个窗口内补删迟到写入或句柄残留重建的文件；灵枢记忆、附件与其他会话不受影响。
 - [dsh-undo-plugin](https://github.com/23swccp/dsh-undo/tree/master/packages/bundle-rollback) — 对话与工作区撤销：通过 /undo 节点轴、会话头部按钮或消息下方图标回滚到任意已发送 prompt 之前；插件私有 Shadow Git 快照恢复文件，被回滚回合不会进入模型上下文，误操作还能“撤回回滚”。附带归档会话管理与工具卡片分类配色。
-- [240xu/dsh-message-ops](https://github.com/240xu/dsh-message-ops) — DSH 会话消息级回滚、单条删除与重放式恢复；操作以 append-only surface replace 实现，带确认提示和运行中会话保护。
-- [240xu/dsh-session-lazy-view](https://github.com/240xu/dsh-session-lazy-view) — 只读会话惰性查看器：仅 stat 列出会话，再只解压尾部 Zstandard 帧查看最近事件；独立 /lazyview 面板支持搜索、统计和导出。
-- [240xu/dsh-session-search](https://github.com/240xu/dsh-session-search) — 跨会话全文搜索：对持久化 DSH 会话日志建立增量消息级索引，返回 sessionId、seq 与摘录；提供 agent 工具和独立面板。
 - [2JumpSinA/dsh-context-guard](https://github.com/2JumpSinA/dsh-context-guard) — 长会话越跑越贵，平台到点还会把上下文压掉。这个插件做三件事：在会话标题旁显示当前上下文占了多少，鼠标停上去能看到这个数是怎么来的；过 45% 时往工作目录的 HANDOVER.md 写一份交接草稿，记下改过哪些文件、花了多少钱、最近几轮在聊什么；到 60% 提醒你一次该收尾了。平台压缩发生时，它把压缩前的数字记一行，事后还查得到。不调用模型，也不改动对话内容。它不阻止压缩，拿不回已经被压掉的部分。
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) — 对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。
 - [439436269-ctrl/dsh-session-path](https://github.com/439436269-ctrl/dsh-session-path) — 复制会话日志路径（或可直接粘贴的接续块），并把多帧 zstd 会话日志转成可读文件，供另一个会话读取接续。
